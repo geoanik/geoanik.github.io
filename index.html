@@ -557,8 +557,8 @@ function updateCharts() {
     createChart("#chart-container2", dataSensor2);
 }
 
-// Load CSV data and set up event listener for button click
-d3.csv("./data/SensorData.csv").then(data => {
+// Load CSV data and set up event listener for button click    
+    d3.csv("https://raw.githubusercontent.com/geoanik/geoanik.github.io/2016eda98552f4be3d5182f554db81f4e347acca/data/SensorData.csv").then(data => {
     console.log("CSV Data Loaded:", data); // Debugging statement
 
     // Define the date format used in your CSV
